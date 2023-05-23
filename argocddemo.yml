@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: nginx-pod
-          image: fadydevops/html
+          image: fadydevops/html:latest
           ports:
             - containerPort: 80
