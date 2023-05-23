@@ -4,10 +4,10 @@ metadata:
   name: nginx-service
   namespace: default
   labels:
-    app: nginx-pod
+    app: nginx-app
 spec:
   selector:
-    app: nginx-pod
+    app: nginx-app
   type: NodePort
   ports:
     - name: http
