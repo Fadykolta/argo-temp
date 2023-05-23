@@ -7,7 +7,7 @@ metadata:
   namespace: default
 spec:
   containers:
-  - image: fadydevops/webapp:tagname
+  - image: nginx
     name: nginx-pod
     resources: {}
   dnsPolicy: ClusterFirst
