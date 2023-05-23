@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app-deployment
+  namespace: defualt
   labels:
     app: nginx-pod
 spec:
@@ -16,6 +17,6 @@ spec:
     spec:
       containers:
         - name: nginx-pod
-          image: fadydevops/html:latest
+          image: fadydevops/html:main
           ports:
             - containerPort: 80
