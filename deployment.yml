@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: nginx-app-john
-          image: fadydevops/html:main
+          image: fadydevops/html:pr-3
           ports:
             - containerPort: 8080
