@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app-deployment
-  namespace: webapp-index
+  namespace: webapp-yellow
   labels:
     app: nginx-app
 spec:
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: nginx-app-john
-          image: fadydevops/html:pr-3
+          image: fadydevops/html:v1
           ports:
             - containerPort: 8080

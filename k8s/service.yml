@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-service
-  namespace: webapp-index
+  namespace: webapp-yellow
   labels:
     app: nginx-app
 spec:
   selector:
     app: nginx-app
-  type: LoadBalancer
+  type: NodePort
   ports:
     - name: http
       port: 80
