@@ -16,7 +16,7 @@ spec:
         app: nginx-app
     spec:
       containers:
-        - name: nginx-app-john
+        - name: nginx-app
           image: fadydevops/game-temp:latest
           ports:
             - containerPort: 8080
